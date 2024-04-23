@@ -31,29 +31,29 @@ DECLARE numero, resto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Digite n numero
     ESCREVA "Digite um número: "
     
-    // Insira seu comentário
+    // Ler n numero
     LEIA numero
     
-    // Insira seu comentário
+    // Se n numero for maior ou igual a zero entso:
     SE numero >= 0 ENTAO
 
-        // Insira seu comentário
+        // o resto de n numero % 2
         resto <- numero % 2
 
-        // Insira seu comentário
+        // Se o resto de n numero == 0 ele sera um numero par
         SE resto == 0 ENTAO
             ESCREVA "O número é par!"
 
-        // Insira seu comentário
+        // Se o resto de n numero == 0 ele sera um numero impar
         SENAO
           ESCREVA "O número é impar!"
 
         FIM_SE
 
-    // Insira seu comentário
+    // Se nao ele devera ser um numero positivo
     SENAO             
         ESCREVA "O número deve ser postivo!"
 
@@ -96,23 +96,23 @@ DECLARE sal_atual, sal_reaj: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Digite seu RS atual
     ESCREVA "Digite seu salário atual:"
 
-    // Insira seu comentário
+    // Leia RS atual
     LEIA sal_atual
 
-    // Insira seu comentário
+    // se RS atual for <= 500 entao o reajuste = RS multiplicado por 1.2
     SE sal_atual <= 500 ENTAO
         sal_reaj = sal_atual * 1.2
 
-    // Insira seu comentário
+    // Senao reajuste e igual a RS atual multiplicado por 1.1
     SENAO
         sal_reaj = sal_atual * 1.1
 
     FIM_SE
 
-    // Insira seu comentário
+    // Assim o resultado deve ser NRS é o reajuste
     ESCREVA "O novo salário é R$", sal_reaj
 
 FIM
@@ -156,35 +156,35 @@ DECLARE nota1, nota2, media: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Digite a nota 1
     ESCREVA "Digite a nota 1:"
 
-    // Insira seu comentário
+    // nota 1 x
     LEIA nota1
 
-    // Insira seu comentário
+    // Digite nota 2
     ESCREVA "Digite a nota 2:"
 
-    // Insira seu comentário
+    // nota 2 y
     LEIA nota2
 
-    // Insira seu comentário
+    // Se x é maior ou igual a 0 e Z >= 0 entao
     SE nota1 >= 0 E nota2 >= 0 ENTAO
 
-        // Insira seu comentário
+        // Entao media é igual a (x+z) dividido por 2 
         media =  (nota1 + nota2)/2
 
-        // Insira seu comentário
+        // Se a media for >= 7 ele sera aprovado
         SE media >= 7 ENTAO
             ESCREVA "O aluno está aprovado!"
 
-        // Insira seu comentário
+        // Se não ele esta reprovado
         SENAO
             "O aluno está reprovado!"
 
         FIM_SE
 
-    // Insira seu comentário
+    // Enta a nota deve ser maior que 0
     SENAO
         ESCREVA "A nota deve ser maior que zero!"
 
@@ -231,30 +231,30 @@ DECLARE idade, anos_apto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Digite sua Idade x
     ESCREVA ""Digite a sua idade:"
 
-    // Insira seu comentário
+    // idade x 
     LEIA idade
 
-    // Insira seu comentário
+    // se idade x for menor que 0 
     SE idade < 0 ENTAO
         ESCREVA "A idade deve ser maior que zero!"
 
-    // Insira seu comentário
+    // ou seja 
     SENAO
 
-        // Insira seu comentário
+        // se x for maior ou igual 18 ele pode tirar a cnh
         SE idade >= 18 ENTAO
             ESCREVA "O candidato está apto a tirar a CNH!"
 
-        // Insira seu comentário
+        // ou seja
         SENAO
 
-            // Insira seu comentário
+            // se x for menor ou igual a 18
             anos_apto <- 18 - idade
 
-            // Insira seu comentário
+            // faltam z anos para ele estar apto
             ESCREVA "Faltam", anos_apto, "ano(s) para o candidato estar apto!"
 
         FIM_SE
