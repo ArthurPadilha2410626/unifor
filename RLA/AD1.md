@@ -1,15 +1,15 @@
 <img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
 
-**Curso:** preencha com seus dados <br>
-**Disciplina:** preencha com seus dados <br>
+**Curso:** Engenharia Mecanica <br>
+**Disciplina:** Raciocinio logico e algoritimo <br>
 **Código/Turma:** preencha com seus dados <br>
 **Professor:** Ricardo Carubbi <br>
-**Data:** preencha com a data de envio <br>
-**Aluno(a):** preencha com seus dados <br>
-**Matrícula:** preencha com seus dados <br>
+**Data:** 23/04/2024 <br>
+**Aluno(a):** Arthur Padilha Maciel <br>
+**Matrícula:** 2410626 <br>
 
-**1a chamada (Sim/Não):** preencha com a opção correta <br>
-**2a chamada (Sim/Não):** preencha com a opção correta
+**1a chamada (Sim/Não):** Não <br>
+**2a chamada (Sim/Não):** Sim <br>
 
 # Avaliação Diagnóstica 1
 
@@ -79,28 +79,28 @@ DECLARE a,b,axu: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Digite um valor para a
     ESCREVA "Digite o valor da a:"
 
-    // Insira seu comentário
+    // leia um valor para a 
     LEIA a
 
-    // Insira seu comentário
+    // Digite um valor para b
     ESCREVA "Digite o valor da b:"
 
-    // Insira seu comentário
+    // Leia um valor para b
     LEIA b
 
-    // Insira seu comentário
+    // se aux for igual a a
     aux <- a 
 
-    // Insira seu comentário
+    // entao a vaiser igual a b
     a <- b
 
-    // Insira seu comentário
+    // se b for igual a aux
     b <- aux
 
-    // Insira seu comentário
+    // escreva a= e b=
     ESCREVA "a=", a
     ESCREVA "b=", b
 
@@ -175,35 +175,35 @@ DECLARE n, cont, nota, i: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Digite a quantidade de notas dos alunos
     ESCREVA "Digite a quantidade de notas dos alunos:"
 
-    // Insira seu comentário
+    // leia numeros
     LEIA n
 
-    // Insira seu comentário
+    // a consta deve estar igual a zero
     cont = 0 
 
-    // Insira seu comentário
+    // Para i de 1 ate n faça
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
+        // digite a nota do aluno i
         ESCREVA "Digite a nota do aluno", i, ":"
 
-        // Insira seu comentário
+        // Leia a nota do aluno i
         LEIA nota
 
-        // Insira seu comentário
+        // Se a nota for maior ou igual 50 e a nota for menor ou igual 100
         SE nota >= 50 E nota <= 100 ENTAO
 
-            // Insira seu comentário
+            // Contudo = 1
             cont = cont + 1 
 
         FIM_SE
 
     FIM_PARA
 
-    // Insira seu comentário
+    // O alunos de aprovados é igual 
     ESCREVA "O numero de alunos aprovados e:", cont
 
 FIM
