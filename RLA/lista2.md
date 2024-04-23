@@ -28,27 +28,27 @@ DECLARE  sal, sal_reaj: real, prof: caractere
 
 INICIO
 
-    // Insira seu comentário
+    // Leia salario do professor 
     LEIA sal, prof
 
-    // Insira seu comentário
+    // escolha
     ESCOLHA
 
-        // Insira seu comentário
+        // caso o professor tiver omesmo salario do tecnico reajuste de 1.5 multiplicado pelo o salario
         CASO prof == “Técnico”		
             sal_reaj ← 1.5 * sal
 
-        // Insira seu comentário
+        // caso o professor tiver o mesmo salario do gerente o reajuste 1.3 multiplicado pelo o salario
         CASO prof = “Gerente”		
             sal_reaj ← 1.3 * sal
 
-    // Insira seu comentário
+    // entao o reajuste é igual 1.1 multiplicado pelo o salario
     SENÃO
         sal_reaj ← 1.1 * sal
 
     FIM_ESCOLHA
 
-    // Insira seu comentário
+    // Io salario reajustado sera igual ao salrio completo reajustado
     ESCREVA “Salário Reajustado = “, sal_reaj
 
 FIM
@@ -91,31 +91,31 @@ DECLARE num1, num2, num3, num4: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Digitar o numero 1
     ESCREVA "Digite o número 1:"
 
-    // Insira seu comentário
+    // leia o numero1 
     LEIA num1
 
-    // Insira seu comentário
+    // Digite o numero 2
     ESCREVA "Digite o número 2:"
 
-    // Insira seu comentário
+    // Leia o num2
     LEIA num2
 
-    // Insira seu comentário
+    // Digite o numero 3
     ESCREVA "Digite o número 3:"
 
-    // Insira seu comentário
+    // Leia o numero3
     LEIA num3
 
-    // Insira seu comentário
+    // Digite o numero 4
     ESCREVA "Digite o número 4:"
 
-    // Insira seu comentário
+    // Leia o numero4
     LEIA num4
 
-    // Insira seu comentário
+    // A média tem que ser igual a (num1 mais num2 mais num3 mais num4) dividido por 4 com tudo a media é igual a "MEDIA"
     media <- (num1 + num2 + num3 + num4)/4
     ESCREVA "A média é", media
 
@@ -150,16 +150,16 @@ DECLARE C, F: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Digite x °C
     ESCREVA "Digite a temperatura em Celisus:"
 
-    // Insira seu comentário
+    // leia x °C
     LEIA C
 
-    // Insira seu comentário
+    // Se x for igual 9/5 °C = 32
     F <- (9/5) * C + 32
 
-    // Insira seu comentário
+    // escrreva a temperatura é igual F em C
     ESCREVA "A temperatura em Fahrenheit é", F, "graus"
 
 FIM
@@ -217,72 +217,72 @@ DECLARE op: INTEIRO; num1,num2,res: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Escreva + - * /
     ESCREVA "Operações válidas: 1(soma), 2(subtração), 3(multiplicação) e 4(divisão)"
 
-    // Insira seu comentário
+    // Digite uma operação
     ESCREVA "Digite uma operação:"
 
-    // Insira seu comentário
+    // leioa operação
     LEIA op
 
-    // Insira seu comentário
+    // digite um numero x
     ESCREVA "Digite um número:"
     LEIA num1
 
-    // Insira seu comentário
+    // digite um numero y
     ESCREVA "Digite outro número:"
     LEIA num2
 
-    // Insira seu comentário
+    // escolha
     ESCOLHA
 
-        // Insira seu comentário
+        // caso a op der igual a 1
         CASO op == 1
 
-            // Insira seu comentário
+            // pesposta x+y
             res = num1 + num2
 
-            // Insira seu comentário
+            // escreva + e =
             ESCREVA num1, "+", num2, "=", res
 
-        // Insira seu comentário
+        // caso a op der igual a 2
         CASO op == 2
 
-            // Insira seu comentário
+            // escreva x-y 
             res = num1 - num2
 
-            // Insira seu comentário
+            // escreva - e =
             ESCREVA num1, "-", num2, "=", res
 
-        // Insira seu comentário
+        // Caso a operação for igual a  3
         CASO op == 3
 
-            // Insira seu comentário
+            // x*y
             res = num1 * num2
 
-            // Insira seu comentário
+            // Escreva * e =
             ESCREVA num1, "*", num2, "=", res
 
-        // Insira seu comentário
+        // Caso a operação der igul a 4
         CASO op == 4
 
-            // Insira seu comentário
+            // tudo igual 0
             SE num2 != 0 ENTAO
 
-                // Insira seu comentário
+                // Escreva x/y
                 res = num1 / num2
 
-                // Insira seu comentário
+                // Escreva / e =
                 ESCREVA num1, "/", num2, "=", res
 
-            // Insira seu comentário
+            // Se não vai dar impossivel dividir
             SENAO
                 ESCREVA "Impossível dividir!"
 
             FIM_SE
 
-    // Insira seu comentário
+    // Se não vai dar operação invalida
     SENAO
         ESCREVA "Operação inválida!"
 
@@ -338,49 +338,49 @@ DECLARE idade: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Digite a idade do aluno
     ESCREVA "Digite a idade do aluno:"
 
-    // Insira seu comentário
+    // Leia idade 
     LEIA idade
 
-    // Insira seu comentário
+    // Escolha idade x
     ESCOLHA
 
-        // Insira seu comentário
+        // caso x for maior igual a 5 e x for menor igual 7
         CASO idade >=5 E idade <= 7
 
-            // Insira seu comentário
+            // Escreva infantial A
             ESCREVA "Infantial A"
 
-        // Insira seu comentário
+        // Se  x for maior ou igual a 8 e x for menor ou igual a 10
         CASO idade >=8 E idade <= 10
 
-            // Insira seu comentário
+            // Escreva Infantial B
             ESCREVA "Infantial B"
 
-        // Insira seu comentário
+        // Se x for maior ou igual a 11 e x for menor ou igual 13
         CASO idade >=11 E idade <= 13
 
-            // Insira seu comentário
+            // Escreva juvenial A
             ESCREVA "Juvenil A"
 
-        // Insira seu comentário
+        // Se x for maior ou igual a 14 e x for menor ou igual 17
         CASO idade >=14 E idade <= 17
 
-            // Insira seu comentário
+            // Escreva Juvenil B
             ESCREVA "Juvenil B"
 
-        // Insira seu comentário
+        // Se x for maior ou igual a 18
         CASO idade >=18
 
-            // Insira seu comentário
+            // Escreva adulto
             ESCREVA "Adulto"
 
-    // Insira seu comentário
+    // Senao
     SENAO
 
-        // Insira seu comentário
+        // Digite uma idade válida
         ESCREVA "Digite uma idade válida!"
 
     FIM_ESCOLHA
